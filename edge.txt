@@ -1,0 +1,13 @@
+Your_Farm South Marnie_Ranch
+Marnie_Ranch South River
+Marnie_Ranch East Bus_Stop
+Marnie_Ranch West Wizard_Tower
+Bus_Stop East Village
+Village North Carpenter
+Carpenter North Mines
+Carpenter East Community_Center
+Community_Center South Museum
+Mines East Mountains
+Village East Museum
+Village South Beach
+Beach South Ocean

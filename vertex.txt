@@ -1,0 +1,13 @@
+Your_Farm
+Marnie_Ranch
+Wizard_Tower
+River
+Bus_Stop
+Village
+Carpenter
+Mines
+Mountains
+Community_Center
+Museum
+Beach
+Ocean
