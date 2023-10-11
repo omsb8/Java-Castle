@@ -22,7 +22,7 @@ public class castle
 
 	public static void main(String[] args) throws IOException
 	{
-		/*
+		
 		//-----------Showing Map
 		var frame = new JFrame();
 		var icon = new ImageIcon("my_castle.jpg");
@@ -31,12 +31,12 @@ public class castle
 		frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 		frame.pack();
 		frame.setVisible(true);
-		*/
+		
 
 		Scanner in = new Scanner(System.in);
 
 		// read in vertices
-		File file = new File("src/vertex.txt");
+		File file = new File("vertex.txt");
 		Scanner infile = new Scanner(file);
 		String Input = "";
 		while (infile.hasNextLine())
@@ -47,7 +47,7 @@ public class castle
 		System.out.println(Vertex.size() + " vertices read from file"); //--------------------------- For Testing
 
 		// read in edges
-		file = new File("src/edge.txt");
+		file = new File("edge.txt");
 		infile = new Scanner(file);
 		String From, Direction, To;
 		int Count=0;
@@ -97,7 +97,7 @@ public class castle
 		System.out.println("|        /    \\     |>\\    |  \\/  |");
 		System.out.println("|       /      \\    |  \\   |      |");
 		System.out.println("|      /        \\   |   \\  |      |");
-				
+
 		System.out.println("Press <Enter> to Continue");
 		in.nextLine();
 		Room Entrance = Vertex.get (0);
@@ -106,12 +106,57 @@ public class castle
 		while (Choice !='q')
 		{
 			System.out.println ( "You are in the : " +Green+ Temp.RoomName +Normal);
+
+			if (Temp.RoomName.equals("Your_Farm")) {
+				// ASCII art for Your Farm
+				System.out.println("     /\\");
+				System.out.println("    /  \\ ");
+				System.out.println("   /    \\");
+				System.out.println("  /      \\");
+				System.out.println(" /        \\");
+				System.out.println("/__________\\");
+				System.out.println("|          |");
+				System.out.println("|          |");
+				System.out.println("|          |");
+				System.out.println("|          |");
+				System.out.println(" ----------");
+			}
+
+			if (Temp.RoomName.equals("Ocean"))
+			{
+				System.out.println(Blue + "~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~"+Normal);
+			}
+			if (Temp.RoomName.equals("Bus_Stop"))
+			{
+				System.out.println("      ___________");
+				System.out.println("     |           |");
+				System.out.println("=====|           |======");
+				System.out.println("     |           |");
+				System.out.println("      -----------");
+			}
+
+			if (Temp.RoomName.equals("River")) {
+				// ASCII art for the River
+				System.out.println(Blue + "~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
+				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~"+Normal);
+			}
+
 			if (Temp.North != null)
 				System.out.println ("  ___|  |___");
 			else
-				System.out.println ("  __________");
-			System.out.println (" |          |");
-			
+			{
+				System.out.println("  __________");
+				System.out.println(" |          |");
+			}
 			if (Temp.West != null && Temp. East != null) // door east and west
 			{
 				System.out.println ("_|          |_");
@@ -123,7 +168,7 @@ public class castle
 				System.out.println(" |          |_");
 				System.out.println(" |           _");
 			}
-			
+
 			if (Temp.West != null && Temp.East == null)
 			{
 				System.out.println("_|          |");
@@ -139,49 +184,6 @@ public class castle
 			}
 			else
 				System.out.println ("  ----------");
-			
-			/*
-			if (Temp.RoomName.equals("Your_Farm")); 
-			{	
-				System.out.println("     /\\");
-				System.out.println("    /  \\ ");
-				System.out.println("   /    \\");
-				System.out.println("  /      \\");
-				System.out.println(" /        \\");
-				System.out.println("/__________\\");
-				System.out.println("|          |");
-				System.out.println("|          |");
-				System.out.println("|          |");
-				System.out.println("|          |");
-				System.out.println(" ----------");
-			}
-			if (Temp.RoomName.equals("River"));
-			{	
-				System.out.println(Blue+"~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");			
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-			}
-			if (Temp.RoomName.equals("Ocean"));
-			{	
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
-				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~"+Normal);
-			}
-			if (Temp.RoomName.equals("Bus_Stop"));
-			{	
-				System.out.println("      ___________");
-				System.out.println("     |           |");
-				System.out.println("=====|           |======");
-				System.out.println("     |           |");
-				System.out.println("      -----------");
-			}
-			*/
 				
 			System.out.print ("You can move to the following direction/s "+Red+"ONLY"+Normal+": ");
 			if (Temp.North != null)
