@@ -141,13 +141,125 @@ public class castle
 			}
 
 			if (Temp.RoomName.equals("River")) {
-				// ASCII art for the River
 				System.out.println(Blue + "~~~~~~~~~~~~~~~~~~~~~~~~~");
 				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~");
 				System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~"+Normal);
+			}
+
+			if (Temp.RoomName.equals("Wizard_Tower")) {
+				System.out.println("   _______");
+				System.out.println("  /       \\");
+				System.out.println(" /  WIZARD \\");
+				System.out.println("|   TOWER   |");
+				System.out.println("|           |");
+				System.out.println("|           |");
+				System.out.println("|   _   _   |");
+				System.out.println("|  /|  /|  /|");
+				System.out.println("|_/ |_/ |_/ |");
+				System.out.println("  |   |   |");
+			}
+
+			if (Temp.RoomName.equals("Marnie_Ranch")) {
+				System.out.println("   __      __  ");
+				System.out.println("  /  \\    /  \\  ");
+				System.out.println(" /    \\__/    \\  ");
+				System.out.println("|    RANCH     |");
+				System.out.println("|              |");
+				System.out.println("|  __      __  |");
+				System.out.println("| /  \\    /  \\ |");
+				System.out.println("|/    \\__/    \\|");
+				System.out.println("      ||||      ");
+			}
+
+			if (Temp.RoomName.equals("Village")) {
+				System.out.println("      __O__       ");
+				System.out.println("    //    \\\\     ");
+				System.out.println("   //      \\\\    ");
+				System.out.println("  //   | |  \\\\   ");
+				System.out.println(" //   -|-   \\\\  ");
+				System.out.println("//    _|_|_   \\\\ ");
+				System.out.println("|   /  | |  \\   |");
+				System.out.println("|__|__|_|_|__|__|");
+
+			}
+
+			if (Temp.RoomName.equals("Carpenter")) {
+				System.out.println("        _");
+				System.out.println("      _|_|_");
+				System.out.println("     |  |  |");
+				System.out.println("     |  |  |");
+				System.out.println("     |__|__|");
+				System.out.println("    /   |   \\");
+				System.out.println("   /    |    \\");
+				System.out.println("  /     |     \\");
+				System.out.println(" /______|______\\");
+				System.out.println("|    Carpenter |");
+				System.out.println("|              |");
+				System.out.println("|______________|");
+			}
+
+			if (Temp.RoomName.equals("Mines")) {
+				System.out.println("     _____     ");
+				System.out.println("    /     \\   ");
+				System.out.println("   /       \\   ");
+				System.out.println("  /   __    \\  ");
+				System.out.println(" /   /  \\    \\ ");
+				System.out.println("|   |    |   |");
+				System.out.println("|   |    |   |");
+				System.out.println(" \\  |    |  / ");
+				System.out.println("  \\ |    | /  ");
+				System.out.println("   \\|____|/   ");
+				System.out.println("    \\_____/   ");
+			}
+
+			if (Temp.RoomName.equals("Mountains")) {
+				System.out.println("        /^\\        ");
+				System.out.println("       /   \\      ");
+				System.out.println("      /     \\    ");
+				System.out.println("     /       \\  ");
+				System.out.println("   /  /\\   /\\  \\ ");
+				System.out.println("  /  /  \\ /  \\  \\");
+				System.out.println(" /__/____X____\\__\\");
+				System.out.println("   /\\   / \\   /\\   ");
+				System.out.println("  /  \\ /   \\ /  \\ ");
+				System.out.println(" /    /     \\    \\");
+			}
+
+			if (Temp.RoomName.equals("Community_Center")) {
+				System.out.println("   ____     ____   ");
+				System.out.println("  /    \\   /    \\  ");
+				System.out.println(" |      | |      | ");
+				System.out.println(" |  ┏━━━┛ |      | ");
+				System.out.println(" |  ┗━┓   |      | ");
+				System.out.println(" |    ┃   |      | ");
+				System.out.println("  \\___/   \\___/   ");
+				System.out.println("   ______ ______   ");
+				System.out.println("  |______|______|  ");
+			}
+
+			if (Temp.RoomName.equals("Museum")) {
+				System.out.println("    ______   ________   ______");
+				System.out.println("   /  __  \\ /  _____/  /  __  \\");
+				System.out.println("  /  /_/  /|  |____   /  /_/  /");
+				System.out.println(" /  ____  / \\____  \\ /  ____  /");
+				System.out.println("/__/   /__/ /______/ /__/   /__/");
+				System.out.println("  __    __   ______   ______");
+				System.out.println(" /  |  /  | /  __  \\ /  __  \\");
+				System.out.println(" |  |_/  |/  /_/  /|  |_/  /");
+				System.out.println(" |   _  < >   ___/ |   _  <");
+				System.out.println(" |  | \\  \\|  /     |  | \\  \\");
+				System.out.println(" |__|  \\__\\_/      |__|  \\__\\");
+			}
+
+			if (Temp.RoomName.equals("Beach")) {
+				System.out.println("    .-.  .-.  .-.  .-.  .-.  .-.  .-.  .-.  .-.  .-.  .-.  .-.");
+				System.out.println("   /   \\/   \\/   \\/   \\/   \\/   \\/   \\/   \\/   \\/   \\/   \\");
+				System.out.println("   |---.|---.|---.|---.|---.|---.|---.|---.|---.|---.|---.|---|");
+				System.out.println("   \\   / \\   / \\   / \\   / \\   / \\   / \\   / \\   / \\   / \\   /");
+				System.out.println("    `-'   `-'   `-'   `-'   `-'   `-'   `-'   `-'   `-'   `-'   `-'");
 			}
 
 			if (Temp.North != null)
