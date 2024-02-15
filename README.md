@@ -2,7 +2,6 @@
 
 This README provides an overview and explanation of the Java code for a text-based castle exploration game. The game uses ASCII art to represent rooms in a castle and allows the player to navigate through them. It also includes a pathfinding feature using Dijkstra's algorithm to find the shortest path between rooms.
 
-Introduction
 The castle Java program is a text-based game that simulates exploring a castle with interconnected rooms. The game uses ASCII art to represent each room and allows players to move between rooms and find the shortest path to specific destinations within the castle.
 
 Features
